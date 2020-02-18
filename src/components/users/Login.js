@@ -43,7 +43,6 @@ const Login = () => {
       <div className="Login">
         <div className="Login__logo">
           <i className="fas fa-fire"></i>
-          <span><b>tinder</b>hack</span>
         </div>
         
         { error && <span>Ups! Invalid email or password</span>}
