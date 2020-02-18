@@ -9,8 +9,10 @@ const navbar = () => {
             <ul className="navbar-nav list-group list-group-horizontal-xl">
                 <li><Link to='/' className="link ">Home</Link></li>
                 <li><Link to='/about' className="link">About</Link></li>
+                <li><Link to='/calendar' className="link">Calendar</Link></li>
                 <li><Link to='/login' className="link">Login</Link></li>
                 <li><Link to='/register' className="link">Register</Link></li>
+                
         </ul>
         </nav>
   )
