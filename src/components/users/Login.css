@@ -1,0 +1,22 @@
+.card{
+    text-align: center;
+    width: 28rem;
+    background-color: rgb(161, 237, 208);
+    opacity:0.9;
+    position: absolute;
+    left: 35%;
+    top: 30%;
+    border-radius: 1em;
+}
+
+.input{
+    margin: 3em;
+}
+
+.btn{
+    margin:3em;
+    background-color:white;
+    border-color: white;
+    font-weight: bolder;
+}
+
