@@ -1,0 +1,6 @@
+body{
+    background:  url(./components/misc/space1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+}

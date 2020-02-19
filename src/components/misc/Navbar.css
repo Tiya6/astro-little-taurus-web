@@ -1,0 +1,26 @@
+.navbar{
+    /*color: rgb(61, 166, 117);*/
+    color: white;
+    height: 75px;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.link{
+    text-decoration: none;
+    /*color:rgb(61, 166, 117);*/
+    color: white;    
+    padding: 1rem 1rem 2em 15em;
+}
+
+.link:hover{
+    text-decoration: none;
+    /*color:rgb(61, 166, 117);*/
+    color: white;
+}
+
+.bg{
+    /*background-color:rgb(182, 193, 209);*/
+    background-color: black;
+}
