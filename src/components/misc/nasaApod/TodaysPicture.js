@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './Home.css'
+import './TodaysPicture.css'
 
-class home extends Component {
+class TodaysPicture extends Component {
 
     constructor(props) {
         super(props);
@@ -30,7 +30,7 @@ class home extends Component {
       
     render() {
         return (
-        <div className="card col-4 mt-4 ml-5">
+        <div className="card-picture col-4 mt-4 ml-5">
             <img src={this.state.imgurl} alt=""className="card-img-top img mt-3"/>
             <div className="card-body text-center">
                 <h4 className="card-title">NASA'S PICTURE OF THE DAY</h4>
@@ -44,4 +44,4 @@ class home extends Component {
     }
 
   
-  export default home;
+  export default TodaysPicture;

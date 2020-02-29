@@ -1,0 +1,47 @@
+.explore{
+  height: 20em;
+  width: 80em;
+}
+
+.wrapper{
+  position: relative;
+}
+
+.outerDiv1{
+  position: absolute;
+  left: 20%;
+  margin-top: 5%;
+}
+
+.innerDiv1{
+  text-align: center;
+}
+
+.card-text-home{
+  padding-top: 6em;
+  font-size: 25px;
+}
+
+.card-text-home-two{
+  padding-top: 1em;
+  font-size: 25px;
+}
+
+.link-hover{
+  text-decoration: none;
+  /*color:rgb(61, 166, 117);*/
+  color: rgb(18, 26, 46);
+  padding-top: 1.5em;
+}
+
+.link-hover:hover{
+  text-decoration: none;
+  /*color:rgb(61, 166, 117);*/
+  color: rgb(18, 26, 46);
+}
+
+.img-size{
+  margin-top:1em;
+  width: 50%;
+  height: 80%;
+}
