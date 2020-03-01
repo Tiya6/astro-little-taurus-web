@@ -1,4 +1,4 @@
-.login{
+.register{
     text-align: center;
     width: 650px;
     background-color:  white;
@@ -10,11 +10,7 @@
     border-radius: 5px;
 }
 
-.input{
-    margin: 3em;
-}
-
-.btn{
+button{
     margin:4em;
     background-color: rgb(18, 26, 46);
     color:white;
@@ -22,16 +18,20 @@
     font-weight: bolder;
     width: 20%;
     height: 60px;
-    border-radius: 0.5em;
-}
-
-.cardheader{
-    background-color: white;
-    width: 50%;
 }
 
 .form-control{
     border: 0;
     outline: 0;
     border-bottom: 2px solid grey;
+    margin: 1em;
+    width: 95%;
+}
+
+.input-group-text{
+    width: 120%;
+}
+
+.input-group{
+    width: 95%;
 }

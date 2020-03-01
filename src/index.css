@@ -1,5 +1,7 @@
 body{
-    background:  url(./components/misc/space1.jpg);
+    background:  url(./components/misc/images/space5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
+    font-family: 'Gugi';
 }

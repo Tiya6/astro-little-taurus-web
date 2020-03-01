@@ -1,0 +1,28 @@
+
+  
+.card-picture{
+      background-color: transparent;
+      border:none;
+      color:white;
+}
+
+.title-center{
+    text-align: center;
+}
+
+.title-center h4 {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.title-center p {
+    font-size: 20px;
+}
+
+.text-center h5{
+    font-size: 35px;
+}
+
+.text-center p{
+    font-size: 20px;
+}
