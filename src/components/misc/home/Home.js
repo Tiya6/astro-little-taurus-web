@@ -17,12 +17,9 @@ const home = () => {
               </Link>
             </div>
             <div className="card card-text-home col-md-3">LATEST NEWS</div>
-            <div className="card card-text-home col-md-3">COMMING SOON</div>
-            <div className="card card-text-home col-md-3">COMMING SOON</div>
+            <div className="card card-text-home-three col-md-6">COMMING SOON</div>
           </div>
           <div className="row explore">
-            <div className="card card-text-home col-md-3">COMMING SOON</div>
-            <div className="card card-text-home col-md-3">COMMING SOON</div>
             <div className="card card-text-home col-md-3">COMMING SOON</div>
             <div className="card card-text-home col-md-3">COMMING SOON</div>
           </div>          

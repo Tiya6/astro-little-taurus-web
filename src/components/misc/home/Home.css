@@ -23,8 +23,14 @@
 }
 
 .card-text-home-two{
-  padding-top: 1em;
+  padding-top: 2em;
   font-size: 25px;
+}
+
+.card-text-home-three{
+  padding-top: 12.2em;
+  font-size: 25px;
+  height: 25.5em;
 }
 
 .link-hover{
