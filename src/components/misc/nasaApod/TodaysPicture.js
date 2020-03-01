@@ -30,17 +30,26 @@ class TodaysPicture extends Component {
       
     render() {
         return (
-        <div className="card col-4 mt-4 ml-5">
-            <img src={this.state.imgurl} alt=""className="card-img-top img mt-3"/>
-            <div className="card-body text-center">
-                <h4 className="card-title">NASA'S PICTURE OF THE DAY</h4>
-                <p className="card-text"><b>{this.state.date}</b></p>
-                <h5 className="card-title">{this.state.title}</h5>
-                <p className="card-text paragr pt-3">Explanation: {this.state.explanation}</p>
-            </div>              
+        <div className="card-picture mt-4">
+          <div className="title-center">
+            <h4 className="">NASA'S PICTURE OF THE DAY</h4> 
+            <p className=""><b>{this.state.date}</b></p>
+          </div>
+          <div className="row">
+            <div className="col-5 mt-3 ml-4">
+              <img src={this.state.imgurl} alt=""/>
+            </div>
+            <div className="col-2"></div>
+            <div className="text-center col-4 pciture-text mt-5">
+              <h5 className="mb-3">{this.state.title}</h5>
+              <div className="border"></div>
+              <p className="paragr pt-3 mt-5">Explanation: {this.state.explanation}</p>
+            </div> 
+          </div>                      
         </div>
+
         );
-      }
+      }y
     }
 
   
