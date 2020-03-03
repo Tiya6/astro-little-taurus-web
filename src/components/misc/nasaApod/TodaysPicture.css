@@ -1,5 +1,4 @@
 
-  
 .card-picture{
       background-color: transparent;
       border:none;
@@ -25,4 +24,8 @@
 
 .text-center p{
     font-size: 20px;
+}
+
+.imge img{
+    width:95%;
 }

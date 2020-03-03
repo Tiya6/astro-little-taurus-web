@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './TodaysPicture.css'
+import ReactPlayer from 'react-player';
 
 class TodaysPicture extends Component {
 
@@ -10,7 +11,7 @@ class TodaysPicture extends Component {
             title: '',
             explanation: '', 
             imgurl: '',
-            
+            url: ''
         };
       }
 
@@ -23,21 +24,24 @@ class TodaysPicture extends Component {
               date: responseData.date,
               title: responseData.title,
               explanation: responseData.explanation,
-              imgurl: responseData.url 
+              imgurl: responseData.url ,
+              url: responseData.url
             }); 
         });
       }
       
     render() {
-        return (
+      
+      return (
         <div className="card-picture mt-4">
           <div className="title-center">
             <h4 className="">NASA'S PICTURE OF THE DAY</h4> 
             <p className=""><b>{this.state.date}</b></p>
           </div>
           <div className="row">
-            <div className="col-5 mt-3 ml-4">
+            <div className="col-5 mt-3 ml-5 imge">
               <img src={this.state.imgurl} alt=""/>
+              <ReactPlayer url='https://www.youtube.com/embed/Ilifg26TZrI?rel=0'   width='100%' height='100%'playing/>
             </div>
             <div className="col-2"></div>
             <div className="text-center col-4 pciture-text mt-5">
@@ -49,7 +53,12 @@ class TodaysPicture extends Component {
         </div>
 
         );
-      }y
+      }
+
+      _onReady(event) {
+        // access to player in all event handlers via event.target
+        event.target.pauseVideo();
+      }
     }
 
   

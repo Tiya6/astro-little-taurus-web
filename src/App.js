@@ -7,6 +7,7 @@ import home from './components/misc/home/Home';
 import Learn from './components/misc/learn/Learn';
 import MeetUp from './components/misc/meetUp/MeetUp';
 import TodaysPicture from './components/misc/nasaApod/TodaysPicture';
+import EventsList from './components/events/Events';
 
 
 
@@ -19,6 +20,7 @@ function App() {
       <Route exact path="/learn" component={Learn}/>
       <Route exact path="/meetup" component={MeetUp}/>
       <Route exact path="/todayspicture" component={TodaysPicture}/>
+      <Route exact path="/calendar" component={EventsList}/>
       <Route exact path="/" component={home}/>
     </div>
   );
