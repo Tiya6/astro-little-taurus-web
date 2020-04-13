@@ -16,7 +16,8 @@ const navbar = () => {
             </ul>
             <ul className="navbar navbar-nav list-group list-group-horizontal-xl navbar-right">
                 <li><Link to='/login' className="link">LOGIN</Link></li>
-                <li><Link to='/register' className="link">REGISTER</Link></li>          
+                <li><Link to='/register' className="link">REGISTER</Link></li>
+                <li><Link to='/logout' className="link">LOGOUT</Link></li>            
             </ul>
         </nav>
   )

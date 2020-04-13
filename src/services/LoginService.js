@@ -19,12 +19,26 @@ const register = (body) => (
 
 
 const http =  axios.create({
-  baseURL: 'https://https://astro-little-taurus.herokuapp.com/',
+  baseURL: 'https://astro-little-taurus.herokuapp.com/',
   withCredentials: true
 })
 
+http.interceptors.response.use(
+  response => response.data,
+  error => {
+    if (error.response && error.response.status === 401) {
+      localStorage.clear()
+      window.location.assign('/login')
+    }
+
+    return Promise.reject(error)
+  }
+)
+
 const login = ({ email, password }) =>
  http.post('/login', { email, password })
+
+const logout = () => http.post('/logout')
 
 const register = (body) => 
 http.post('/register', body)
@@ -32,5 +46,6 @@ http.post('/register', body)
 
 export default {
     login,
-    register
+    register,
+    logout
 }

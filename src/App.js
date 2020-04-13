@@ -8,6 +8,8 @@ import Learn from './components/misc/learn/Learn';
 import MeetUp from './components/misc/meetUp/MeetUp';
 import TodaysPicture from './components/misc/nasaApod/TodaysPicture';
 import EventsList from './components/events/Events';
+import User from './components/users/UserProfile';
+import { AuthContextProvider } from './contexts/AuthContext';
 
 
 
@@ -16,7 +18,9 @@ function App() {
     <div className="app">
       <Navbar />
       <Route exact path="/login" component={Login}/>
+      <Route exact path="/logout" component={AuthContextProvider}/>
       <Route exact path="/register" component={Register}/>
+      <Route exact path="/user" component={User}/>
       <Route exact path="/learn" component={Learn}/>
       <Route exact path="/meetup" component={MeetUp}/>
       <Route exact path="/todayspicture" component={TodaysPicture}/>
