@@ -10,7 +10,7 @@ class TodaysPicture extends Component {
             date: '',
             title: '',
             explanation: '', 
-            imgurl: '',
+            media_type:'',
             url: ''
         };
       }
@@ -24,15 +24,34 @@ class TodaysPicture extends Component {
               date: responseData.date,
               title: responseData.title,
               explanation: responseData.explanation,
-              imgurl: responseData.url ,
+              media_type: responseData.media_type,
               url: responseData.url
             }); 
         });
       }
-      
+
+
     render() {
+      if( this.state.media_type === 'image'){
+        this.urlFinal = this.state.url;
+      }
+      else if(this.state.media_type ==='video'){
+
+      let urlState = this.state.url;
+
+      function youtube_parser(urlVar){
+        var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/;
+        var match = urlVar.match(regExp);
+        return (match&&match[7].length===11)? match[7] : false;
+      }
+
+      let urlSettled=youtube_parser(urlState)
+
+      this.urlFinal = 'https://www.youtube.com/embed/'+urlSettled+'?rel=0';
+
+      }
       
-      return (
+      return (        
         <div className="card-picture mt-4">
           <div className="title-center">
             <h4 className="">NASA'S PICTURE OF THE DAY</h4> 
@@ -40,8 +59,8 @@ class TodaysPicture extends Component {
           </div>
           <div className="row">
             <div className="col-5 mt-3 ml-5 imge">
-              <img src={this.state.imgurl} alt=""/>
-              <ReactPlayer url='https://www.youtube.com/embed/Ilifg26TZrI?rel=0'   width='100%' height='100%'playing/>
+              <img src={this.urlFinal} alt=""/>
+              <ReactPlayer url={this.urlFinal} width='80%' height='80%' playing/>
             </div>
             <div className="col-2"></div>
             <div className="text-center col-4 pciture-text mt-5">
@@ -53,11 +72,6 @@ class TodaysPicture extends Component {
         </div>
 
         );
-      }
-
-      _onReady(event) {
-        // access to player in all event handlers via event.target
-        event.target.pauseVideo();
       }
     }
 
