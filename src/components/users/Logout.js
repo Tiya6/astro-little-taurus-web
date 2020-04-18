@@ -22,8 +22,9 @@ class Logout extends Component {
     render() {
 
         return (
-           <Button onClick={this.handleClick} className="logout-button" type="submit" disabled={this.state.loading}>LOGOUT</Button>
-            
+           <ul className="nav navbar-nav list-group list-group-horizontal-xl home">
+            <li onClick={this.handleClick} className="loginout" type="submit" disabled={this.state.loading}>LOGOUT</li>
+          </ul>
         )
         
     }
