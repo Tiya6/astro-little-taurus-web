@@ -18,7 +18,7 @@ class navbar extends Component {
             login = <Logout/>            
         } else {
             login = <Link to="/login" className="link" variant="primary">LOGIN</Link>
-            register = <Link to="/register" className="link" variant="primary">SIGN UP</Link>
+            register = <Link to="/signup" className="link" variant="primary">SIGN UP</Link>
             redirect = <Redirect to="/"/>
         }
         return (
