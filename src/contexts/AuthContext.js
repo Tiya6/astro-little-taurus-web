@@ -16,8 +16,8 @@ export class AuthContextProvider extends React.Component {
   logout = () => {
     LoginService.logout()
       .then(() => {
-        localStorage.clear()
-        this.setUser({})
+        //localStorage.clear()
+        this.setUser()
       })
   }
 

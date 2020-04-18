@@ -56,22 +56,22 @@ const Register = () => {
                   Sign in
                 </h3>              
         </div>
-        <form onSubmit={handleSubmit}>
+        <form action="/register" method="POST" onSubmit={handleSubmit}>
             <input type="text" className="form-control" name="name" placeholder="Enter name" value={name} onChange={handleChange} />
             <input type="text" className="form-control" name="email" placeholder="Enter email" value={email} onChange={handleChange} />
             <input type="password" className="form-control" name="password" placeholder="Enter password" value={password} onChange={handleChange} />
             <input type="text" className="form-control" name="username" placeholder="Enter username" value={username} onChange={handleChange} />
-            <div class="input-group mb-3 ml-3 mt-4">
-              <div class="input-group-prepend">
-                <span class="input-group-text">Avatar</span>
+            <div className="input-group mb-3 ml-3 mt-4">
+              <div className="input-group-prepend">
+                <span className="input-group-text">Avatar</span>
               </div>
               <div className="custom-file">
                 <input type="file" className="custom-file-input" name="image" onChange={handleChange} id="inputGroupFile01"/>
-                <label class="custom-file-label" for="inputGroupFile01">Choose image profile file</label>
+                <label className="custom-file-label" /*for="inputGroupFile01"*/>Choose image profile file</label>
               </div>
             </div>
-            <div class="input-group">
-              <div class="input-group-prepend ml-3">
+            <div className="input-group">
+              <div className="input-group-prepend ml-3">
                 <span className="input-group-text">Bio</span>
               </div>
               <textarea className="form-control" name="description" value={description} onChange={handleChange}></textarea>

@@ -29,13 +29,13 @@ class TodaysPicture extends Component {
             }); 
         });
       }
-
+      
 
     render() {
       if( this.state.media_type === 'image'){
         this.urlFinal = this.state.url;
       }
-      else if(this.state.media_type ==='video'){
+      else {
 
       let urlState = this.state.url;
 

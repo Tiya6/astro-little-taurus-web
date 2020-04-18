@@ -1,0 +1,8 @@
+.logout-button:hover{
+    background-color: transparent;
+    border:none;
+}
+
+.logout-button{
+    border:none;
+}
