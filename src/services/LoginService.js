@@ -23,8 +23,9 @@ const login = ({ email, password }) => http.post('/login', { email, password })
 
 const logout = () => http.post('/logout')
 
-const register = (body) => http.post('/register', body)
+const register = (body) => http.post('/user', body)
 
+const user = (id) => http.get(`/user/${id}`)
 
 export default {
     login,

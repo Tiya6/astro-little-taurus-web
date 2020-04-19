@@ -70,7 +70,7 @@ class Login extends React.Component {
           </form>
         </div>
         <div className="font-weight-light">
-                  <p>Not a member? <Link to="/register">Register</Link></p>                  
+                  <p>Not a member? <Link to="/signup">Register</Link></p>                  
         </div>      
       </div>
 
