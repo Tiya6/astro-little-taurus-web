@@ -5,7 +5,7 @@ import LoginService from '../../services/LoginService'
 
 class User extends Component {
 
-  state = {
+  /*state = {
     userid: '',
     username: '',
     name: '',
@@ -24,7 +24,7 @@ class User extends Component {
           })
           return user
       })
-    }
+    }*/
 
   render(){
 
