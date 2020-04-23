@@ -1,0 +1,21 @@
+.rover-style{
+    color: white;
+}
+
+.rover-style img{
+    width: 250px;
+}
+
+.rover-style h3{ 
+    font-size:20px;
+}
+
+.curiosity-style{
+    color:white;
+    margin:40px 0 40px 0;
+}    
+
+.curiosity-style h4{
+    color:white;
+    margin:20px 0 20px 0;
+} 
