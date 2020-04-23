@@ -51,3 +51,23 @@
   width: 50%;
   height: 80%;
 }
+
+.img-rocket{
+  margin-top:0.25em;
+  width: 40%;
+  height: 80%;
+}
+
+.bg-gallery-home{
+  background-image: url("https://www.nasa.gov/sites/default/files/archives_0.jpg");
+  background-repeat: no-repeat;
+  background-size:100%;
+}
+
+.txt-gallery-home{
+  color:white;
+}
+
+.txt-gallery-home:hover{
+  color:white;
+}
