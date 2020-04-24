@@ -30,5 +30,6 @@ const user = (id) => http.get(`/user/${id}`)
 export default {
     login,
     register,
-    logout
+    logout,
+    user
 }

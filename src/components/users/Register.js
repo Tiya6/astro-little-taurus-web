@@ -29,6 +29,7 @@ class Register extends Component {
         const {name, email, password, image, age, gender, description} = this.state
     
         const formData = new FormData()
+        formData.append('description', description)
         formData.append('name', name)
         formData.append('email', email)
         formData.append('password', password)
@@ -119,6 +120,22 @@ class Register extends Component {
                         placeholder="Age"
                         />
                       </div>
+                  </div>
+
+                   <div className="form-group input-group mb-3 ml-1 mt-4">
+                      <div className="input-group-prepend ml-3">
+                        <span className="input-group-text">Bio</span>
+                      </div>
+                      <textarea
+                      value={this.state.description}
+                      onChange={this.handleChange}
+                      autoComplete="off"
+                      name="description"
+                      type="text"
+                      className={`form-control ${errorClassName}`}
+                      id="description"
+                      placeholder="Enter description"
+                      />
                   </div>
 
                   <button type="submit" className="btn" disabled={this.state.loading}>SUBMIT</button>

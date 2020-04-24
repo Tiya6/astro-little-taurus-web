@@ -1,7 +1,49 @@
-.profile{
-    width:50%
+.profile-card{
+    background-color:rgb(18, 26, 46);   
+    width:900px;
+    color:white;
 }
 
-.card{
-    width: 50%;
+.profile{
+    width:100%;  
+}
+
+.profile-cont{
+    width:400px;  
+}
+
+.profile-text{
+    width:400px;  
+}
+
+.profile-img{
+    background-color:transparent;
+    border:none;
+}
+
+.bio{
+    color:white;
+    background-color:transparent;  
+    border:none;
+}
+
+.solardiv{
+    background-color:transparent;  
+    border:none;
+    width:300px;
+}
+
+.solar{
+    background-color:transparent;  
+    border:none;
+    width:150%;
+    margin-left: 400px;
+}
+
+.container-ml{
+    margin-left:0;
+}
+
+.marg-top{
+    margin-top:150px;
 }

@@ -1,20 +1,15 @@
-
 .card-picture{
       background-color: transparent;
       border:none;
       color:white;
 }
 
-.title-center{
-    text-align: center;
-}
-
-.title-center h4 {
+.header-apod h4 {
     font-size: 25px;
     font-weight: bolder;
 }
 
-.title-center p {
+.header-apod p {
     font-size: 20px;
 }
 
@@ -28,4 +23,5 @@
 
 .imge img{
     width:80%;
+    height: 650px;
 }

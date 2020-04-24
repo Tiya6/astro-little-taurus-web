@@ -1,0 +1,50 @@
+.container-space-launch{
+    margin-top:20px;    
+}
+.card-space-launch{
+    color:rgb(18, 26, 46);
+    border:none;
+    padding:15px 0 5px 0;
+}
+
+.space-launch-heading h1{
+    color:white;
+    margin:50px 0 50px 0 ;
+}
+
+.img-style{
+    width:300px;
+    background-color:transparent;
+}
+
+.spacelaunch-img{
+    width:110%
+}
+
+.launch-style{
+    width:800px;
+    margin-left:10px;
+}
+
+.launch-style h2{
+    font-size:20px;
+    font-weight:bolder;
+}
+
+.launch-style h3{
+    font-size:20px;
+}
+
+.launch-style p{
+    font-size:15px;
+}
+
+.launch-description{
+    border-top: 2px solid rgb(18, 26, 46);
+    padding-top:10px;
+}
+
+.launch-bottom{
+    border-bottom: 2px solid rgb(18, 26, 46);
+    padding-bottom: 10px;
+}

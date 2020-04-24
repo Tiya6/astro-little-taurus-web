@@ -1,0 +1,56 @@
+.row-calendar{
+    margin-left:8px;
+}
+
+.card-date{
+    padding-top:5px;
+}
+
+.card-size {
+    width: 50%;
+}
+
+.font-size{
+    font-size:10px;
+}
+
+.headings-size h2{
+    font-size:20px;
+}
+
+.headings-size h3{
+    font-size:18px;
+}
+
+.buttn{
+    width:50%;
+    margin: 5px 0 25px 0;
+}
+
+.card-columns{
+    width:40%;
+}
+
+.heading-img img{
+    width:100%;
+    height: 275px;
+}
+
+.header{
+    margin-top:50px;
+    color:white;
+}
+
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 5;
+  }
+}
+
+.calend-style{
+    margin-top:60px;
+}
+
+.cont-calendar{
+    max-width: 1900px;
+}
