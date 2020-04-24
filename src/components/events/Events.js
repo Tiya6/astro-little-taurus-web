@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import Table from 'react-bootstrap/Table'
 import './Events.css'
-import Modal from 'react-bootstrap/Modal'
-import Button from 'react-bootstrap/Button'
 
 class EventsList extends Component {
 
@@ -10,6 +7,7 @@ class EventsList extends Component {
     super(props);
     this.state = {
       events: [],
+      date: new Date(),
       showing: true,
     };
   }
@@ -19,22 +17,15 @@ class EventsList extends Component {
       .then(res => res.json())
       .then(result => {
         this.setState({
-          events: result
+          events: result,
+          date: result.date,
         });
       });
   }
-  get(){
-    const { events } = this.state;
-      let d = new Date({events});
-      {events.map(event => ( 
-        event.date.getDay()
-        ))}
-    } 
 
   render() {
     const { events } = this.state;
     const { showing } = this.state;
-    console.log({events})
       return (
         /*<div>
           {events.map(event => ( 
@@ -59,26 +50,17 @@ class EventsList extends Component {
             </div>
           ))}          
         </div>*/
-        <div className="text-center">
-          <div className="header">
-            <h1>AGENDA</h1>
-          </div>
-          <div className="header">
-            <h2>APRIL</h2>
-          </div>
-          <div className="header">
-            <h3>UPCOMING EVENTS</h3>
-          </div>
-            <div className="card-columns">
-              {events.map(event => ( 
-                  <div className="card col-12 font-size" key={event.id} >
-                  <div className="card-date text-center headings-size">
+        <div>
+            <div className="row row-calendar">
+              {events.map(event => (                
+                  <div className="card col-3 card-size font-size" key={event.id} >
+                      <div className="card-date text-center headings-size">
                         <h2>{event.date}</h2>
                       </div>
                     <div className="text-center d-inline">                    
                       <div className="d-inline headings-size heading-img">
                         <img src={event.image} alt=""/>
-                        <h2>{event.name}</h2>
+                        <h2 className="mt-3">{event.name}</h2>
                       </div>
                       <div>
                         <button className="btn btn-dark buttn" onClick={() => this.setState({ showing: !showing })}>More info</button>

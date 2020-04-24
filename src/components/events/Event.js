@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Tables = ({ droplets }) => {
+/*const Tables = ({ droplets }) => {
   return (
     <table>
       <thead>
@@ -32,4 +32,42 @@ const Tables = ({ droplets }) => {
 }
 
 
-export default Tables
+export default Tables*/
+
+import Weather from '../weather/Weather';
+import EventsList from './Events';
+import './Events.css'
+
+const Agenda = () => {
+  return (
+    <div className="container cont-calendar text-center">
+
+          <div className="header">
+            <h1>AGENDA</h1>
+          </div>
+          <div className="header">
+            <h2>APRIL</h2>
+          </div>
+
+      <div className="row">
+
+          <div className="col-8 calend-style">
+
+            <EventsList/>
+
+          </div>        
+
+          <div className="col-4">
+
+            <Weather/>
+          
+          </div>
+
+      </div>
+
+    </div>
+  );
+}
+
+
+export default Agenda
