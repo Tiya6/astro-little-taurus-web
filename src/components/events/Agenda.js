@@ -5,36 +5,36 @@ import { Button } from 'react-bootstrap';
 
 const events = [
     {
-      "name": "Close approach of the Moon and Mars",
-      "date": new Date("2020-02-18"),
-      "description": "The Moon and Mars will make a close approach, passing within 0°45' of each other. The Moon will be 25 days old.",
-      "image": "https://in-the-sky.org/image.php?style=icon&img=imagedump/conjunctions/conjunctions.jpg",
+      "name": "New Moon",
+      "date": new Date("2020-04-23"),
+      "description": "The Moon will pass close to the Sun and become lost in the Sun's glare for a few days. The Moon's orbital motion carries it around the Earth once every four weeks, and as a result its phases cycle from new moon, through first quarter, full moon and last quarter, back to new moon once every 29.5 days.",
+      "image": "https://in-the-sky.org/image.php?style=icon&img=imagedump/moon/new_moon.jpg",
       "category" : "Planets",
-      "visibility" : "Visible"
+      "visibility" : "Not visible"
     },
     {
-        "name": "Close approach of the Moon and Jupiter",
-        "date": new Date("2020-02-19"),
-        "description": "The Moon and Jupiter will make a close approach, passing within 0°55' of each other. The Moon will be 26 days old.",
-        "image": "https://in-the-sky.org/image.php?style=icon&img=imagedump/conjunctions/conjunctions.jpg",
-        "category" : "Planets",
-        "visibility" : "Visible with telescope"
-      },
-      {
-        "name": "Close approach of the Moon and Saturn",
-        "date": new Date("2020-02-20"),
-        "description": "The Moon and Saturn will make a close approach, passing within 1°44' of each other. The Moon will be 27 days old.",
-        "image": "https://in-the-sky.org/image.php?style=icon&img=imagedump/conjunctions/conjunctions.jpg",
+        "name": "Uranus at solar conjunction",
+        "date": new Date("2020-04-26"),
+        "description": "Uranus will pass very close to the Sun in the sky as its orbit carries it around the far side of the solar system from the Earth.",
+        "image": "https://in-the-sky.org/image.php?style=icon&img=imagedump/outerplanets/uranus.jpg",
         "category" : "Planets",
         "visibility" : "Not visible"
       },
       {
-        "name": "Close approach of the Moon and Saturn",
-        "date": new Date("2020-02-20"),
-        "description": "The Moon and Saturn will make a close approach, passing within 1°44' of each other. The Moon will be 27 days old.",
-        "image": "https://in-the-sky.org/image.php?style=icon&img=imagedump/conjunctions/conjunctions.jpg",
+        "name": "Venus at greatest brightness",
+        "date": new Date("2020-04-28"),
+        "description": "Venus will reach its greatest brightness in its 2019–2020 evening apparition. It will be shining brightly at mag -4.5.",
+        "image": "https://in-the-sky.org/image.php?style=icon&img=imagedump/innerplanets/venus.jpg",
         "category" : "Planets",
-        "visibility" : "Not visible"
+        "visibility" : "Visible"
+      },
+      {
+        "name": "Moon at First Quarter",
+        "date": new Date("2020-04-30"),
+        "description": "The Moon will be prominent in the evening sky, setting around midnight.",
+        "image": "https://in-the-sky.org/image.php?style=icon&img=imagedump/moon/moon_at_first_quarter.jpg",
+        "category" : "Planets",
+        "visibility" : "Visible"
       },
   ];
 
@@ -89,8 +89,7 @@ const events = [
                                         <div>
                                             <div className="headings-size" id="myDIV" >
                                                 <h3>{event.description}</h3>
-                                                <h3><b>Type of visibility :</b> {event.visibility}</h3>
-                                                <h3><b>Category:</b> {event.category}</h3>
+                                                <h3 className="pt-5"><b>Type of visibility :</b> {event.visibility}</h3>
                                             </div>
                                         </div> 
                                     </div>
