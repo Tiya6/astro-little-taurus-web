@@ -37,10 +37,10 @@ class Weather extends Component {
                           <div className="wrapper">
                               <h2 className="heading">{city.name}</h2>
                               <h2 className="location">{weat.main}</h2>
-                              <p className="temp temp-bottom">
+                              <div className="temp temp-bottom">
                                 <h2 className="location">{temperature.temp} K</h2>
                                 <h2 className="location">Humidity | {temperature.humidity} %</h2>
-                              </p>
+                              </div>
                           </div>
                         </div>
                       </div>
