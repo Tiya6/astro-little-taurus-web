@@ -9,8 +9,10 @@ class EventsList extends Component {
       events: [],
       date: new Date(),
       showing: true,
+      
     };
   }
+  
 
   componentDidMount() {
     fetch('https://astro-little-taurus.herokuapp.com/events')
@@ -22,34 +24,12 @@ class EventsList extends Component {
         });
       });
   }
-
+  
   render() {
     const { events } = this.state;
     const { showing } = this.state;
       return (
-        /*<div>
-          {events.map(event => ( 
-            <div key={event.id} className="card mx-auto text-center">
-              <div className="card-columns">                       
-                <div className="card card-event mx-auto d-flex justify-content-center">
-                
-                    <div>
-                      <img src={event.image} alt=""/>
-                    </div>
-                    <div>
-                      <h2>{event.date}</h2>
-                      <h2>{event.name}</h2>
-                    </div>
-                </div>
-                <div className="card card-event mx-auto ">
-                    <h3>A little description : {event.description}</h3>
-                    <h3>Scale of visibility: {event.visibility}</h3>
-                    <h3>Category : {event.category}</h3>
-                </div>
-              </div>
-            </div>
-          ))}          
-        </div>*/
+       
         <div>
             <div className="row row-calendar">
               {events.map(event => (                

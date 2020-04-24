@@ -28,7 +28,7 @@ class SpaceLaunch extends Component {
         <div className="text-center space-launch-heading">
         <h1>UPCOMING SPACE LAUNCHES</h1>
         {spacelaunch.map(launch => ( 
-            <div  className="container container-space-launch">
+            <div  className="container container-space-launch" key={launch.id}>
 
                 <div className="card card-space-launch flex-row flex-wrap" key={launch.id} >  
 
@@ -42,8 +42,8 @@ class SpaceLaunch extends Component {
                       <p className="card-text launch-bottom">{launch.description}</p>
                       <h3 className="card-title launch-bottom"><b>Location</b> | {launch.location} |</h3>
                       <h3 className="card-title launch-bottom">
-                            <a href={launch.url} target="_blank"><b>Follow the event here</b></a> ||  
-                            <a href={launch.news_url} target="_blank"><b>Read the complete news</b></a>
+                            <a href={launch.url} rel="noopener noreferrer" target="_blank"><b>Follow the event here</b></a> ||  
+                            <a href={launch.news_url} rel="noopener noreferrer" target="_blank"><b>Read the complete news</b></a>
                       </h3>
 
                     </div>

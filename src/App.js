@@ -16,6 +16,7 @@ import Weather from './components/weather/Weather';
 import Wiki from './components/misc/wiki/Wiki';
 import User from './components/users/UserProfile';
 import { AuthContextProvider } from './contexts/AuthContext';
+import AgendaCalendar from './components/events/Agenda';
 
 
 

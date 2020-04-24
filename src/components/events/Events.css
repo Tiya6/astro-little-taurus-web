@@ -39,6 +39,8 @@
 .header{
     margin-top:50px;
     color:white;
+    background:rgb(18, 26, 46);
+    padding: 10px 0 10px 0;
 }
 
 .card-columns {
