@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 .navbar{
     /*color: rgb(61, 166, 117);*/
     color: white;
@@ -11,7 +15,7 @@
     text-decoration: none;
     /*color:rgb(61, 166, 117);*/
     color: white;    
-    padding: 1rem 1rem 2em 2em;
+    padding: 0rem 1rem 0em 2em;
 }
 
 .link:hover{
@@ -27,3 +31,9 @@
 .home{
     font-size: 30px;
 }
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+      
+    }
+  }

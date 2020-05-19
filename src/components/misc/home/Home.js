@@ -24,7 +24,12 @@ const home = () => {
                 UPCOMING SPACE LAUNCH
               </Link>
             </div>
-            <div className="card card-text-home-three col-md-6 bg-gallery-home">
+            <div className="card card-text-home-three col-md-3 bg-gallery-home">
+               <Link to='/nasaimages' className="link-hover txt-gallery-home">
+                 GALLERY
+              </Link>
+            </div>
+            <div className="card card-text-home-three col-md-3 bg-gallery-home">
                <Link to='/nasaimages' className="link-hover txt-gallery-home">
                  GALLERY
               </Link>
@@ -39,6 +44,22 @@ const home = () => {
                 MARS ROVER CURIOSITY
               </Link>
             </div>
+              <div className="card card-text-home-two col-md-3">
+                <div className="center">
+                  <img src={require('../images/wiki.png')} alt="" className="img-size"/>                
+                </div>
+                <Link to='/wiki' className="link-hover">
+                  Wiki
+                </Link>
+              </div>
+              <div className="card card-text-home-two col-md-3">
+                <div className="center">
+                  <img src={require('../images/wiki.png')} alt="" className="img-size"/>                
+                </div>
+                <Link to='/wiki' className="link-hover">
+                  Wiki
+                </Link>
+              </div>
               <div className="card card-text-home-two col-md-3">
                 <div className="center">
                   <img src={require('../images/wiki.png')} alt="" className="img-size"/>                
